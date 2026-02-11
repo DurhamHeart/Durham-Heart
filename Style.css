@@ -1,0 +1,752 @@
+body{
+            background: white;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: white;
+            padding: 20px;
+            height: 150px;
+            text-align: center;
+        }
+        section.image-features{
+            background: white;
+            flex-direction: row;
+            background-image: url("Images/mainback.jpg");
+            background-size: 100%;
+            padding: 20px;
+            height: 400px;
+            display: flex;
+            background-repeat: no-repeat;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101)
+        }
+
+        .image-features-newsletters{
+            background: white;
+            flex-direction: row;
+            background-image: url("Images/newslettersback.jpg");
+            background-size: 100%;
+            padding: 20px;
+            height: 525px;
+            display: flex;
+            background-repeat: no-repeat;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101)
+        }
+
+        .lower-section{
+            border: 0px;
+            height: 200px;
+            text-align: center;
+            color: rgb(109, 35, 101);
+            max-width: 1100px;
+            margin: 0 auto;
+            font-size: large;
+
+        }
+
+        .above-footer{
+            border: 0px;
+            height: 400px;
+            text-align: center;
+            color: rgb(109, 35, 101);
+            margin: 0 auto;
+        }
+
+        .lower-section-pics{
+            display: inline-block;
+            margin: 10px;
+            width: 450px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+        }
+
+        .lower-section-pics-exec{
+            display: inline-block;
+            margin: 10px;
+            width: 1000px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+        }
+
+        .above-footer-exec{
+            border: 0px;
+            height: 575px;
+            text-align: center;
+            color: rgb(109, 35, 101);
+            margin: 0 auto;
+        }
+
+
+        h1{
+            top: -210px;
+            position: relative;
+            text-align: left;
+            font-size: 50px;
+            color: rgb(109, 35, 101);
+        }
+
+
+        footer{
+            background: rgb(109, 35, 101);
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            align-items: center;
+            padding-top: 25px;
+            color: white;
+            
+        }
+
+
+        .circles{
+            margin: auto;
+            width: 190px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 10px solid;
+            position: relative;
+            bottom: -90px;
+        }
+
+        .circles:hover{
+            transform: scale(1.2)
+
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        li:not(.newsletter-list a){
+            display: inline-block;
+            margin: 20px;
+        }
+        a:not(.team-link, .social-link){
+            color: rgb(109, 35, 101);
+            text-decoration: none;
+            border-radius: 200px;
+            padding: 10px
+            
+        }
+
+        header .selected a {
+            color: white;
+            background: rgb(109, 35, 101);
+            border-radius: 200px;
+            padding: 10px;
+        }
+
+        header .logo a {
+            display: inline-block;
+            background-image: url("Images/dhlogo.png");
+            background-size: 170px;
+            background-repeat: no-repeat;
+            width: 150px;
+            text-indent: -999999999px;
+            border-radius: 100px;
+            height: 150px;
+            margin-right: 1250px;
+            position: relative;
+            top: -90px;
+        }
+
+        header .insta a {
+            display: inline-block;
+            background-image: url("Images/instalogo.png");
+            background-size: 125px;
+            text-indent: -99999999999px;
+            background-repeat: no-repeat;
+            width: 150px;
+            height: 150px;
+            border-radius: 0;
+            margin-left: 1300px;
+            position: relative;
+            top: -275px;
+        }
+
+        a:not(.insta a, .logo a, .team-link a, .social-link a):hover{
+            background: rgb(109, 35, 101);
+            color: white;
+        }
+
+
+        h1{
+            text-align: center;
+            top: -425px;
+            position: relative;
+        }
+
+        .middle-section{
+            height: 400px;
+            text-align: center;
+            
+        }
+
+        .welcome{
+            font-size: x-large;
+        }
+
+        .newsletter-message{
+            text-align: center;
+            color: rgb(109, 35, 101);
+            font-size: large;
+            
+        }
+
+        .execs{
+            display: inline-block;
+            margin: 10px;
+            width: 300px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+            align-items: center;
+            gap: 20px
+            
+        }
+
+        .mtt-upper{
+            border: 0px;
+            height: 1550px;
+            text-align: center;
+            color: rgb(109, 35, 101);
+            margin: 0 auto;
+        }
+
+        .team-leaders{
+            display: inline-block;
+            margin: 10px;
+            width: 300px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+            align-items: center;
+            gap: 20px
+        }
+
+        .team-leaders{
+            display: inline-block;
+            margin: 10px;
+            width: 300px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+            align-items: center;
+            gap: 20px
+            
+        }
+
+        .mtt-lower{
+            display: inline-block;
+            width: 100%;
+            height: 110px;
+            align-items: center;
+        }
+
+        .mtt-bottom{
+            width: 100%;
+            height: 135px
+        }
+
+
+        .team-link a{
+            background: white;
+            color: rgb(109, 35, 101);
+            text-decoration: none;
+            margin: 100px;
+            font-size: large;
+            padding: 20px;
+            border-color: rgb(109, 35, 101);
+            border: 2px solid;
+            position: relative;
+            bottom: -50px
+            
+        }
+
+        .team-link a:hover{
+            background: rgb(109, 35, 101);
+            color: white;
+        }
+
+        .teams-upper{
+            height: 400px;
+        }
+
+        .team-welcome{
+            color: rgb(109, 35, 101);
+            text-align: center;
+        }
+
+        .teams-group{
+            display: inline-block;
+            margin: 10px;
+            width: 600px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+            gap: 20px;
+        }
+
+        .teams-member{
+            display: inline-block;
+            margin: 20px;
+            width: 300px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+            
+        }
+
+        .bteams-upper{
+            text-align: center;
+        }
+
+        .teams-middle{
+            border: 0px;
+            height: 90px;
+            text-align: center;
+            color: rgb(109, 35, 101);
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: large;
+            position: relative;
+            bottom: -20px;
+        }
+
+        .teams-paragraph{
+            color: rgb(109, 35, 101);
+        }
+
+        .bteams-lower{
+            height: 1250px;
+            text-align: center;
+        }
+
+        .mteams-upper{
+            height: 425px;
+            text-align: center;
+        }
+
+        .mteams-member{
+            display: inline-block;
+            margin: 20px;
+            width: 225px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+        }
+
+        .mteams-lower{
+            height: 2050px;
+            text-align: center;
+        }
+
+        .bem-lower{
+            height: 200px;
+            text-align: center;
+        }
+
+        .eteams-upper{
+            height: 435px;
+            text-align: center;
+        }
+
+        .eteams-lower{
+            height: 800px;
+            text-align: center;
+        }
+
+        .aboutus-upper{
+            background: white;
+            flex-direction: row;
+            background-image: url("images/execbackground.JPG");
+            background-size: 100%;
+            padding: 20px;
+            height: 600px;
+            display: flex;
+            background-repeat: no-repeat;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101)
+        }
+
+        .aboutus-circles{
+            margin: auto;
+            width: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 10px solid;
+            border-color: white;
+            position: relative;
+            bottom: -150px
+        }
+
+        .aboutus-middle{
+            flex-direction: row;
+            padding: 20px;
+            height: 400px;
+            display: flex;
+        }
+
+        .aboutus-middle-lower{
+            height: 175px;
+            text-align: center;
+            color: rgb(109, 35, 101);
+            margin: 0 auto;
+            justify-content: center;
+            display: flex;
+        }
+
+        .paragraph-row{
+            width: 450px;
+            background: white;
+            color: rgb(109, 35, 101);
+            border-color: rgb(109, 35, 101);
+            border: 5px solid;
+            border-radius: 30px;
+            height: 185px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            font-size: larger;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .aboutus-circles:hover{
+            transform: scale(1.1)
+
+        }
+
+        .wide-paragraph{
+            width: 800px;
+            background: white;
+            color: rgb(109, 35, 101);
+            border-color: rgb(109, 35, 101);
+            border: 5px solid;
+            border-radius: 30px;
+            height: 137px;
+            padding: 20px;
+            text-align: center;
+            font-size: larger;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -115px;
+        }
+
+        .aboutus-lower{
+            height: 75px;
+            color: rgb(109, 35, 101);
+            text-align: center;
+            font-size: large;
+            position: relative;
+            top: -100px
+        }
+
+        .social-link a:hover{
+            background: rgb(109, 35, 101);
+            color: white;
+        }
+
+        .social-link a{
+            background: white;
+            color: rgb(109, 35, 101);
+            text-decoration: none;
+            margin: 25px;
+            font-size: large;
+            padding: 10px;
+            border-color: rgb(109, 35, 101);
+            border: 2px solid;
+            
+        }
+
+        .sponsors-upper{
+            text-align: center;
+            font-size: large;
+            color: rgb(109, 35, 101);
+            background: white;
+            background-image: url("images/sponsorsback.JPG");
+            background-size: 100%;
+            padding: 20px;
+            height: 500px;
+            background-repeat: no-repeat;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+        }
+
+        .sponsors-paragraph{
+            height: 60px;
+            color: rgb(109, 35, 101);
+            text-align: center;
+            font-size: larger;
+        }
+
+
+
+        .RS{
+            border: 0px;
+            height: 400px;
+            text-align: center;
+            color: rgb(109, 35, 101);
+            margin: 0 auto;
+        }
+
+        .RS-logo{
+            display: inline-block;
+            margin: 10px;
+            width: 300px;
+            align-items: center;
+            margin: 40px;
+            position: relative;
+            top: -30px
+            
+        }
+
+        .RS-content{
+            display: inline-block;
+            margin: 10px;
+            width: 800px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+            align-items: center;
+            position: relative;
+            top: 0px;
+            margin: 60px;
+            border-radius: 30px;
+            
+        }
+
+        .igus{
+            border: 0px;
+            height: 400px;
+            text-align: center;
+            color: rgb(109, 35, 101);
+            margin: 0 auto;
+        }
+
+        .igus-logo{
+            display: inline-block;
+            margin: 10px;
+            width: 400px;
+            align-items: center;
+            margin: 40px;
+            position: relative;
+            top: -100px
+            
+        }
+
+        .igus-content{
+            display: inline-block;
+            margin: 10px;
+            width: 800px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+            align-items: center;
+            position: relative;
+            top: -17px;
+            margin: 60px;
+            border-radius: 30px;
+            
+        }
+
+        .ansys{
+            border: 0px;
+            height: 400px;
+            text-align: center;
+            color: rgb(109, 35, 101);
+            margin: 0 auto;
+        }
+
+        .ansys-logo{
+            display: inline-block;
+            margin: 10px;
+            width: 425px;
+            align-items: center;
+            margin: 40px;
+            position: relative;
+            top: -85px
+            
+        }
+
+        .ansys-content{
+            display: inline-block;
+            margin: 10px;
+            width: 800px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+            align-items: center;
+            position: relative;
+            top: -17px;
+            margin: 60px;
+            border-radius: 30px;
+            
+        }
+
+        .mitsubishi{
+            border: 0px;
+            height: 400px;
+            text-align: center;
+            color: rgb(109, 35, 101);
+            margin: 0 auto;
+        }
+
+        .mitsubishi-logo{
+            display: inline-block;
+            margin: 10px;
+            width: 450px;
+            align-items: center;
+            margin: 40px;
+            position: relative;
+            top: -100px
+            
+        }
+
+        .mitsubishi-content{
+            display: inline-block;
+            margin: 10px;
+            width: 800px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+            align-items: center;
+            position: relative;
+            top: -17px;
+            margin: 60px;
+            border-radius: 30px;
+            
+        }
+
+        .imcd{
+            border: 0px;
+            height: 400px;
+            text-align: center;
+            color: rgb(109, 35, 101);
+            margin: 0 auto;
+        }
+
+        .imcd-logo{
+            display: inline-block;
+            margin: 10px;
+            width: 450px;
+            align-items: center;
+            margin: 40px;
+            position: relative;
+            top: -180px
+            
+        }
+
+        .imcd-content{
+            display: inline-block;
+            margin: 10px;
+            width: 800px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+            align-items: center;
+            position: relative;
+            top: -17px;
+            margin: 60px;
+            border-radius: 30px;
+            
+        }
+
+        .brightnetwork{
+            border: 0px;
+            height: 400px;
+            text-align: center;
+            color: rgb(109, 35, 101);
+            margin: 0 auto;
+        }
+
+        .brightnetwork-logo{
+            display: inline-block;
+            margin: 10px;
+            width: 450px;
+            align-items: center;
+            margin: 40px;
+            position: relative;
+            top: -120px
+            
+        }
+
+        .brightnetwork-content{
+            display: inline-block;
+            margin: 10px;
+            width: 800px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+            align-items: center;
+            position: relative;
+            top: -17px;
+            margin: 60px;
+            border-radius: 30px;
+            
+        }
+
+        .uod{
+            border: 0px;
+            height: 400px;
+            text-align: center;
+            color: rgb(109, 35, 101);
+            margin: 0 auto;
+        }
+
+        .uod-logo{
+            display: inline-block;
+            margin: 10px;
+            width: 400px;
+            align-items: center;
+            margin: 40px;
+            position: relative;
+            top: -10px
+            
+        }
+
+        .uod-content{
+            display: inline-block;
+            margin: 10px;
+            width: 800px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+            align-items: center;
+            position: relative;
+            top: -17px;
+            margin: 60px;
+            border-radius: 30px;
+            
+        }
+
+        .healthinnovation{
+            border: 0px;
+            height: 400px;
+            text-align: center;
+            color: rgb(109, 35, 101);
+            margin: 0 auto;
+        }
+
+        .healthinnovation-logo{
+            display: inline-block;
+            margin: 10px;
+            width: 400px;
+            align-items: center;
+            margin: 40px;
+            position: relative;
+            top: -150px
+            
+        }
+
+        .healthinnovation-content{
+            display: inline-block;
+            margin: 10px;
+            width: 800px;
+            border: 5px solid;
+            border-color: rgb(109, 35, 101);
+            align-items: center;
+            position: relative;
+            top: -17px;
+            margin: 60px;
+            border-radius: 30px;
+            
+        }
+
+
