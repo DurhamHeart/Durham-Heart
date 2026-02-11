@@ -361,7 +361,7 @@ body{
         .aboutus-upper{
             background: white;
             flex-direction: row;
-            background-image: url("images/execbackground.JPG");
+            background-image: url("Images/execbackground.JPG");
             background-size: 100%;
             padding: 20px;
             height: 600px;
@@ -467,7 +467,7 @@ body{
             font-size: large;
             color: rgb(109, 35, 101);
             background: white;
-            background-image: url("images/sponsorsback.JPG");
+            background-image: url("Images/sponsorsback.JPG");
             background-size: 100%;
             padding: 20px;
             height: 500px;
