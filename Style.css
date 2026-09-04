@@ -1,752 +1,484 @@
 body{
-            background: white;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header{
-            background: white;
-            padding: 20px;
-            height: 150px;
-            text-align: center;
-        }
-        section.image-features{
-            background: white;
-            flex-direction: row;
-            background-image: url("Images/mainback.jpg");
-            background-size: 100%;
-            padding: 20px;
-            height: 400px;
-            display: flex;
-            background-repeat: no-repeat;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101)
-        }
-
-        .image-features-newsletters{
-            background: white;
-            flex-direction: row;
-            background-image: url("Images/newslettersback.jpg");
-            background-size: 100%;
-            padding: 20px;
-            height: 525px;
-            display: flex;
-            background-repeat: no-repeat;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101)
-        }
-
-        .lower-section{
-            border: 0px;
-            height: 200px;
-            text-align: center;
-            color: rgb(109, 35, 101);
-            max-width: 1100px;
-            margin: 0 auto;
-            font-size: large;
-
-        }
-
-        .above-footer{
-            border: 0px;
-            height: 400px;
-            text-align: center;
-            color: rgb(109, 35, 101);
-            margin: 0 auto;
-        }
-
-        .lower-section-pics{
-            display: inline-block;
-            margin: 10px;
-            width: 450px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-        }
-
-        .lower-section-pics-exec{
-            display: inline-block;
-            margin: 10px;
-            width: 1000px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-        }
-
-        .above-footer-exec{
-            border: 0px;
-            height: 575px;
-            text-align: center;
-            color: rgb(109, 35, 101);
-            margin: 0 auto;
-        }
-
-
-        h1{
-            top: -210px;
-            position: relative;
-            text-align: left;
-            font-size: 50px;
-            color: rgb(109, 35, 101);
-        }
-
-
-        footer{
-            background: rgb(109, 35, 101);
-            position: relative;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 50px;
-            text-align: center;
-            align-items: center;
-            padding-top: 25px;
-            color: white;
-            
-        }
-
-
-        .circles{
-            margin: auto;
-            width: 190px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 10px solid;
-            position: relative;
-            bottom: -90px;
-        }
-
-        .circles:hover{
-            transform: scale(1.2)
-
-        }
-
-        ul{
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-        }
-        li:not(.newsletter-list a){
-            display: inline-block;
-            margin: 20px;
-        }
-        a:not(.team-link, .social-link){
-            color: rgb(109, 35, 101);
-            text-decoration: none;
-            border-radius: 200px;
-            padding: 10px
-            
-        }
-
-        header .selected a {
-            color: white;
-            background: rgb(109, 35, 101);
-            border-radius: 200px;
-            padding: 10px;
-        }
-
-        header .logo a {
-            display: inline-block;
-            background-image: url("Images/dhlogo.png");
-            background-size: 170px;
-            background-repeat: no-repeat;
-            width: 150px;
-            text-indent: -999999999px;
-            border-radius: 100px;
-            height: 150px;
-            margin-right: 1250px;
-            position: relative;
-            top: -90px;
-        }
-
-        header .insta a {
-            display: inline-block;
-            background-image: url("Images/instalogo.png");
-            background-size: 125px;
-            text-indent: -99999999999px;
-            background-repeat: no-repeat;
-            width: 150px;
-            height: 150px;
-            border-radius: 0;
-            margin-left: 1300px;
-            position: relative;
-            top: -275px;
-        }
-
-        a:not(.insta a, .logo a, .team-link a, .social-link a):hover{
-            background: rgb(109, 35, 101);
-            color: white;
-        }
-
-
-        h1{
-            text-align: center;
-            top: -425px;
-            position: relative;
-        }
-
-        .middle-section{
-            height: 400px;
-            text-align: center;
-            
-        }
-
-        .welcome{
-            font-size: x-large;
-        }
-
-        .newsletter-message{
-            text-align: center;
-            color: rgb(109, 35, 101);
-            font-size: large;
-            
-        }
-
-        .execs{
-            display: inline-block;
-            margin: 10px;
-            width: 300px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-            align-items: center;
-            gap: 20px
-            
-        }
-
-        .mtt-upper{
-            border: 0px;
-            height: 1550px;
-            text-align: center;
-            color: rgb(109, 35, 101);
-            margin: 0 auto;
-        }
-
-        .team-leaders{
-            display: inline-block;
-            margin: 10px;
-            width: 300px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-            align-items: center;
-            gap: 20px
-        }
-
-        .team-leaders{
-            display: inline-block;
-            margin: 10px;
-            width: 300px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-            align-items: center;
-            gap: 20px
-            
-        }
-
-        .mtt-lower{
-            display: inline-block;
-            width: 100%;
-            height: 110px;
-            align-items: center;
-        }
-
-        .mtt-bottom{
-            width: 100%;
-            height: 135px
-        }
-
-
-        .team-link a{
-            background: white;
-            color: rgb(109, 35, 101);
-            text-decoration: none;
-            margin: 100px;
-            font-size: large;
-            padding: 20px;
-            border-color: rgb(109, 35, 101);
-            border: 2px solid;
-            position: relative;
-            bottom: -50px
-            
-        }
-
-        .team-link a:hover{
-            background: rgb(109, 35, 101);
-            color: white;
-        }
-
-        .teams-upper{
-            height: 400px;
-        }
-
-        .team-welcome{
-            color: rgb(109, 35, 101);
-            text-align: center;
-        }
-
-        .teams-group{
-            display: inline-block;
-            margin: 10px;
-            width: 600px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-            gap: 20px;
-        }
-
-        .teams-member{
-            display: inline-block;
-            margin: 20px;
-            width: 300px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-            
-        }
-
-        .bteams-upper{
-            text-align: center;
-        }
-
-        .teams-middle{
-            border: 0px;
-            height: 90px;
-            text-align: center;
-            color: rgb(109, 35, 101);
-            max-width: 900px;
-            margin: 0 auto;
-            font-size: large;
-            position: relative;
-            bottom: -20px;
-        }
-
-        .teams-paragraph{
-            color: rgb(109, 35, 101);
-        }
-
-        .bteams-lower{
-            height: 1250px;
-            text-align: center;
-        }
-
-        .mteams-upper{
-            height: 425px;
-            text-align: center;
-        }
-
-        .mteams-member{
-            display: inline-block;
-            margin: 20px;
-            width: 225px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-        }
-
-        .mteams-lower{
-            height: 2050px;
-            text-align: center;
-        }
-
-        .bem-lower{
-            height: 200px;
-            text-align: center;
-        }
-
-        .eteams-upper{
-            height: 435px;
-            text-align: center;
-        }
-
-        .eteams-lower{
-            height: 800px;
-            text-align: center;
-        }
-
-        .aboutus-upper{
-            background: white;
-            flex-direction: row;
-            background-image: url("Images/execbackground.JPG");
-            background-size: 100%;
-            padding: 20px;
-            height: 600px;
-            display: flex;
-            background-repeat: no-repeat;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101)
-        }
-
-        .aboutus-circles{
-            margin: auto;
-            width: 250px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 10px solid;
-            border-color: white;
-            position: relative;
-            bottom: -150px
-        }
-
-        .aboutus-middle{
-            flex-direction: row;
-            padding: 20px;
-            height: 400px;
-            display: flex;
-        }
-
-        .aboutus-middle-lower{
-            height: 175px;
-            text-align: center;
-            color: rgb(109, 35, 101);
-            margin: 0 auto;
-            justify-content: center;
-            display: flex;
-        }
-
-        .paragraph-row{
-            width: 450px;
-            background: white;
-            color: rgb(109, 35, 101);
-            border-color: rgb(109, 35, 101);
-            border: 5px solid;
-            border-radius: 30px;
-            height: 185px;
-            margin: 20px;
-            padding: 20px;
-            text-align: center;
-            font-size: larger;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .aboutus-circles:hover{
-            transform: scale(1.1)
-
-        }
-
-        .wide-paragraph{
-            width: 800px;
-            background: white;
-            color: rgb(109, 35, 101);
-            border-color: rgb(109, 35, 101);
-            border: 5px solid;
-            border-radius: 30px;
-            height: 137px;
-            padding: 20px;
-            text-align: center;
-            font-size: larger;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            top: -115px;
-        }
-
-        .aboutus-lower{
-            height: 75px;
-            color: rgb(109, 35, 101);
-            text-align: center;
-            font-size: large;
-            position: relative;
-            top: -100px
-        }
-
-        .social-link a:hover{
-            background: rgb(109, 35, 101);
-            color: white;
-        }
-
-        .social-link a{
-            background: white;
-            color: rgb(109, 35, 101);
-            text-decoration: none;
-            margin: 25px;
-            font-size: large;
-            padding: 10px;
-            border-color: rgb(109, 35, 101);
-            border: 2px solid;
-            
-        }
-
-        .sponsors-upper{
-            text-align: center;
-            font-size: large;
-            color: rgb(109, 35, 101);
-            background: white;
-            background-image: url("Images/sponsorsback.JPG");
-            background-size: 100%;
-            padding: 20px;
-            height: 500px;
-            background-repeat: no-repeat;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-        }
-
-        .sponsors-paragraph{
-            height: 60px;
-            color: rgb(109, 35, 101);
-            text-align: center;
-            font-size: larger;
-        }
-
-
-
-        .RS{
-            border: 0px;
-            height: 400px;
-            text-align: center;
-            color: rgb(109, 35, 101);
-            margin: 0 auto;
-        }
-
-        .RS-logo{
-            display: inline-block;
-            margin: 10px;
-            width: 300px;
-            align-items: center;
-            margin: 40px;
-            position: relative;
-            top: -30px
-            
-        }
-
-        .RS-content{
-            display: inline-block;
-            margin: 10px;
-            width: 800px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-            align-items: center;
-            position: relative;
-            top: 0px;
-            margin: 60px;
-            border-radius: 30px;
-            
-        }
-
-        .igus{
-            border: 0px;
-            height: 400px;
-            text-align: center;
-            color: rgb(109, 35, 101);
-            margin: 0 auto;
-        }
-
-        .igus-logo{
-            display: inline-block;
-            margin: 10px;
-            width: 400px;
-            align-items: center;
-            margin: 40px;
-            position: relative;
-            top: -100px
-            
-        }
-
-        .igus-content{
-            display: inline-block;
-            margin: 10px;
-            width: 800px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-            align-items: center;
-            position: relative;
-            top: -17px;
-            margin: 60px;
-            border-radius: 30px;
-            
-        }
-
-        .ansys{
-            border: 0px;
-            height: 400px;
-            text-align: center;
-            color: rgb(109, 35, 101);
-            margin: 0 auto;
-        }
-
-        .ansys-logo{
-            display: inline-block;
-            margin: 10px;
-            width: 425px;
-            align-items: center;
-            margin: 40px;
-            position: relative;
-            top: -85px
-            
-        }
-
-        .ansys-content{
-            display: inline-block;
-            margin: 10px;
-            width: 800px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-            align-items: center;
-            position: relative;
-            top: -17px;
-            margin: 60px;
-            border-radius: 30px;
-            
-        }
-
-        .mitsubishi{
-            border: 0px;
-            height: 400px;
-            text-align: center;
-            color: rgb(109, 35, 101);
-            margin: 0 auto;
-        }
-
-        .mitsubishi-logo{
-            display: inline-block;
-            margin: 10px;
-            width: 450px;
-            align-items: center;
-            margin: 40px;
-            position: relative;
-            top: -100px
-            
-        }
-
-        .mitsubishi-content{
-            display: inline-block;
-            margin: 10px;
-            width: 800px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-            align-items: center;
-            position: relative;
-            top: -17px;
-            margin: 60px;
-            border-radius: 30px;
-            
-        }
-
-        .imcd{
-            border: 0px;
-            height: 400px;
-            text-align: center;
-            color: rgb(109, 35, 101);
-            margin: 0 auto;
-        }
-
-        .imcd-logo{
-            display: inline-block;
-            margin: 10px;
-            width: 450px;
-            align-items: center;
-            margin: 40px;
-            position: relative;
-            top: -180px
-            
-        }
-
-        .imcd-content{
-            display: inline-block;
-            margin: 10px;
-            width: 800px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-            align-items: center;
-            position: relative;
-            top: -17px;
-            margin: 60px;
-            border-radius: 30px;
-            
-        }
-
-        .brightnetwork{
-            border: 0px;
-            height: 400px;
-            text-align: center;
-            color: rgb(109, 35, 101);
-            margin: 0 auto;
-        }
-
-        .brightnetwork-logo{
-            display: inline-block;
-            margin: 10px;
-            width: 450px;
-            align-items: center;
-            margin: 40px;
-            position: relative;
-            top: -120px
-            
-        }
-
-        .brightnetwork-content{
-            display: inline-block;
-            margin: 10px;
-            width: 800px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-            align-items: center;
-            position: relative;
-            top: -17px;
-            margin: 60px;
-            border-radius: 30px;
-            
-        }
-
-        .uod{
-            border: 0px;
-            height: 400px;
-            text-align: center;
-            color: rgb(109, 35, 101);
-            margin: 0 auto;
-        }
-
-        .uod-logo{
-            display: inline-block;
-            margin: 10px;
-            width: 400px;
-            align-items: center;
-            margin: 40px;
-            position: relative;
-            top: -10px
-            
-        }
-
-        .uod-content{
-            display: inline-block;
-            margin: 10px;
-            width: 800px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-            align-items: center;
-            position: relative;
-            top: -17px;
-            margin: 60px;
-            border-radius: 30px;
-            
-        }
-
-        .healthinnovation{
-            border: 0px;
-            height: 400px;
-            text-align: center;
-            color: rgb(109, 35, 101);
-            margin: 0 auto;
-        }
-
-        .healthinnovation-logo{
-            display: inline-block;
-            margin: 10px;
-            width: 400px;
-            align-items: center;
-            margin: 40px;
-            position: relative;
-            top: -150px
-            
-        }
-
-        .healthinnovation-content{
-            display: inline-block;
-            margin: 10px;
-            width: 800px;
-            border: 5px solid;
-            border-color: rgb(109, 35, 101);
-            align-items: center;
-            position: relative;
-            top: -17px;
-            margin: 60px;
-            border-radius: 30px;
-            
-        }
-
-
+    background: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1{
+    position: relative;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: clamp(1.7rem, 4vw, 3.5rem);
+    color: rgb(109, 35, 101);
+    top: -30px;
+}
+
+/*INDEX PAGE*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: clamp(0.5rem, 2vw, 1.5rem);
+    background-color: white;
+    overflow-x: hidden;
+    min-width: 0;
+    
+    flex-wrap: wrap;
+    gap: clamp(0.5rem, 2vw, 1.5rem);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-left-link{
+    display: flex;
+    align-items: center;
+}
+
+.logo-left{
+    width: clamp(50px, 10vw, 150px);
+    height: auto;
+}
+
+nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+}
+
+.unselected a{
+    color: rgb(109, 35, 101);
+    text-decoration: none;
+    border-radius: 200px;
+    padding: 10px;
+    flex-wrap: nowrap;
+
+    white-space: nowrap;
+    text-align: center;
+    padding: clamp(6px, 1vw, 10px);
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
+}
+
+.selected a{
+    color: white;
+    background: rgb(109, 35, 101);
+    border-radius: 200px;
+    padding: 10px;
+    text-decoration: none;
+    flex-wrap: nowrap;
+
+    white-space: nowrap;
+    text-align: center;
+    padding: clamp(6px, 1vw, 10px);
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
+}
+
+
+.unselected a:hover{
+    color: white;
+    background: rgb(109, 35, 101);
+    border-radius: 200px;
+    padding: 10px;
+    text-decoration: none;
+    flex-wrap: nowrap;
+}
+
+.main-nav{
+    display: flex;
+    gap: clamp(0.5rem, 2vw, 1.5rem);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+.insta-right-link{
+    display: flex;
+    align-items: center;
+}
+
+.insta-right{
+    width: clamp(40px, 8vw, 120px);
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.index-circles-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("Images/mainback.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: clamp(300px, 50vh, 600px);
+    padding: clamp(10px, 3vw, 30px);
+
+    border: 5px solid rgb(109, 35, 101);
+    box-sizing: border-box;
+}
+
+.circles{
+    margin: auto;
+    width: clamp(100px, 18vw, 190px);
+    height: clamp(100px, 18vw, 190px);
+    border-radius: 50%;
+    object-fit: cover;
+    border: clamp(5px, 1vw, 10px) solid white;
+    position: relative;
+    bottom: clamp(-100px, -14vw, -180px);
+    transition: transform 0.3s ease;
+}
+
+.circles:hover{
+    transform: scale(1.2);
+}
+
+.lower-section{
+    border: 0;
+    text-align: center;
+    color: rgb(109, 35, 101);
+
+    width: 100%;
+    max-width: 1200px;
+    min-height: clamp(150px, 25vh, 300px);
+
+    margin: 0 auto;
+    padding: clamp(10px, 3vw, 30px);
+
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+
+.above-footer{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(10px, 3vw, 40px);
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(10px, 2vw, 20px);
+
+}
+
+.lower-section-pics{
+    display: block;
+    width: clamp(210px, 28vw, 350px);
+    border: 5px solid rgb(109, 35, 101);
+    box-sizing: border-box;
+}
+
+footer{
+    background: rgb(109, 35, 101);
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    min-height: clamp(40px, 8vh, 70px);
+    padding: clamp(10px, 2vw, 25px);
+
+    text-align: center;
+    color: white;
+    font-size: clamp(0.5rem, 1vw, 1rem);
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ABOUT US PAGE*/
+
+.aboutus-upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("Images/execbackground.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: clamp(550px, 43vh, 650px);
+    padding: clamp(10px, 3vw, 30px);
+
+    border: 5px solid rgb(109, 35, 101);
+    box-sizing: border-box;
+}
+
+.aboutus-circles{
+    margin: auto;
+    width: clamp(100px, 22vw, 250px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: clamp(5px, 1vw, 10px) solid white;
+    position: relative;
+    top: 125px;
+    bottom: clamp(-80px, -10vw, -150px);
+    transition: transform 0.3s ease;
+}
+
+.aboutus-circles:hover{
+    transform: scale(1.1);
+}
+
+.aboutus-middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: clamp(10px, 2vw, 20px);
+    padding: clamp(10px, 3vw, 15px);
+}
+
+.paragraph-row{
+    flex: 1 1 clamp(250px, 30vw, 450px);
+    background: white;
+    color: rgb(109, 35, 101);
+    border: 5px solid rgb(109, 35, 101);
+    border-radius: 30px;
+    margin: clamp(7px, 1.5vw, 15px);
+    padding: clamp(5px, 1vw, 7px);
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+}
+
+.aboutus-middle-lower{
+    min-height: clamp(150px, 20vh, 175px);
+    text-align: center;
+    color: rgb(109, 35, 101);
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wide-paragraph{
+    width: clamp(300px, 60vw, 800px);
+    background: white;
+    color: rgb(109, 35, 101);
+    border: 5px, solid rgb(109, 35, 101);
+    border-radius: 30px;
+    padding: clamp(10px, 2vw, 20px);
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: clamp(5px, 2vw, 25px);
+    margin: 0 auto;
+}
+
+.aboutus-lower{
+    min-height: clamp(100px, 23vh, 150px);
+    color: rgb(109, 35, 101);
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    margin: clamp(20px, 5vw, 30px) auto;
+    padding: clamp(10px, 3vw, 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.social-link{
+    background: white;
+    color: rgb(109, 35, 101);
+    text-decoration: none;
+    margin: clamp(10px, 3vw, 25px);
+    font-size: clamp(0.9rem, 2vw, 1.3rem);
+    padding: clamp(6px, 1.5vw, 12px);
+    border: 2px solid rgb(109, 35, 101);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/*MEET THE TEAM PAGE*/
+
+.meettheteam-upper{
+    text-align: center;
+    color: rgb(109, 35, 101);
+    margin: 0 auto;
+    padding: clamp(10px, 3vw, 40px);
+}
+
+.member-photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(15px, 3vw, 40px);
+    margin-bottom: clamp(30px, 5vw, 60px);
+}
+
+.member-image{
+    width: clamp(300px, 30vw, 400px);
+    object-fit: cover;
+}
+
+.meettheteam-lower{
+    min-height: clamp(100px, 23vh, 150px);
+    color: rgb(109, 35, 101);
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    margin: clamp(5px, 1vw, 10px) auto;
+    padding: clamp(2px, 1vw, 5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.team-link{
+    background: white;
+    color: rgb(109, 35, 101);
+    text-decoration: none;
+    margin: clamp(10px, 3vw, 25px);
+    font-size: clamp(0.9rem, 2vw, 1.3rem);
+    padding: clamp(6px, 1.5vw, 12px);
+    border: 2px solid rgb(109, 35, 101);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.meettheteam-message{
+    text-align: center;
+    color: rgb(109, 35, 101);
+    font-size: x-large;
+}
+
+.teams-message {
+  border: 0;
+  text-align: center;
+  color: rgb(109, 35, 101);
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  position: relative;
+  padding: clamp(10px, 2vw, 20px);
+  height: auto;
+  bottom: 0;
+}
+
+/*NEWSLETTERS PAGE*/
+
+.image-features-newsletters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("Images/newslettersback.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: clamp(350px, 60vh, 800px);
+    padding: clamp(10px, 3vw, 30px);
+
+    border: 5px solid rgb(109, 35, 101);
+    box-sizing: border-box;
+}
+
+.newsletters-middle-section{
+    height: 40vh;
+    text-align: center;
+}
+
+.newsletter-message{
+    text-align: center;
+    color: rgb(109, 35, 101);
+    font-size: large;
+}
+
+.newsletter-item{
+    color: rgb(109, 35, 101);
+    text-decoration: none;
+    border-radius: 200px;
+    padding: 10px;
+    flex-wrap: nowrap;
+
+    white-space: normal;
+    text-align: center;
+    padding: clamp(6px, 1vw, 10px);
+}
+
+.newsletter-item:hover{
+    color: white;
+    background: rgb(109, 35, 101);
+    border-radius: 200px;
+    padding: 10px;
+    text-decoration: none;
+    flex-wrap: nowrap;
+}
+
+.newsletter-list{
+    margin: clamp(10px, 2vw, 25px) 0;
+}
+
+/*SPONSORS PAGE*/
+
+.sponsors-upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("Images/sponsorsback.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: clamp(550px, 42vh, 650px);
+    padding: clamp(10px, 3vw, 30px);
+
+    border: 5px solid rgb(109, 35, 101);
+    box-sizing: border-box;
+}
+
+.sponsors-message{
+    text-align: center;
+    color: rgb(109, 35, 101);
+    font-size: large;
+}
+
+.sponsors-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(15px, 3vw, 40px);
+    margin-bottom: clamp(30px, 5vw, 60px);
+}
+
+.sponsor-image{
+    max-width: 95%;
+}
