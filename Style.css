@@ -1,0 +1,484 @@
+body{
+    background: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1{
+    position: relative;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: clamp(1.7rem, 4vw, 3.5rem);
+    color: rgb(109, 35, 101);
+    top: -30px;
+}
+
+/*INDEX PAGE*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: clamp(0.5rem, 2vw, 1.5rem);
+    background-color: white;
+    overflow-x: hidden;
+    min-width: 0;
+    
+    flex-wrap: wrap;
+    gap: clamp(0.5rem, 2vw, 1.5rem);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-left-link{
+    display: flex;
+    align-items: center;
+}
+
+.logo-left{
+    width: clamp(50px, 10vw, 150px);
+    height: auto;
+}
+
+nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+}
+
+.unselected a{
+    color: rgb(109, 35, 101);
+    text-decoration: none;
+    border-radius: 200px;
+    padding: 10px;
+    flex-wrap: nowrap;
+
+    white-space: nowrap;
+    text-align: center;
+    padding: clamp(6px, 1vw, 10px);
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
+}
+
+.selected a{
+    color: white;
+    background: rgb(109, 35, 101);
+    border-radius: 200px;
+    padding: 10px;
+    text-decoration: none;
+    flex-wrap: nowrap;
+
+    white-space: nowrap;
+    text-align: center;
+    padding: clamp(6px, 1vw, 10px);
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
+}
+
+
+.unselected a:hover{
+    color: white;
+    background: rgb(109, 35, 101);
+    border-radius: 200px;
+    padding: 10px;
+    text-decoration: none;
+    flex-wrap: nowrap;
+}
+
+.main-nav{
+    display: flex;
+    gap: clamp(0.5rem, 2vw, 1.5rem);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+.insta-right-link{
+    display: flex;
+    align-items: center;
+}
+
+.insta-right{
+    width: clamp(40px, 8vw, 120px);
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.index-circles-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("Images/mainback.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: clamp(300px, 50vh, 600px);
+    padding: clamp(10px, 3vw, 30px);
+
+    border: 5px solid rgb(109, 35, 101);
+    box-sizing: border-box;
+}
+
+.circles{
+    margin: auto;
+    width: clamp(100px, 18vw, 190px);
+    height: clamp(100px, 18vw, 190px);
+    border-radius: 50%;
+    object-fit: cover;
+    border: clamp(5px, 1vw, 10px) solid white;
+    position: relative;
+    bottom: clamp(-100px, -14vw, -180px);
+    transition: transform 0.3s ease;
+}
+
+.circles:hover{
+    transform: scale(1.2);
+}
+
+.lower-section{
+    border: 0;
+    text-align: center;
+    color: rgb(109, 35, 101);
+
+    width: 100%;
+    max-width: 1200px;
+    min-height: clamp(150px, 25vh, 300px);
+
+    margin: 0 auto;
+    padding: clamp(10px, 3vw, 30px);
+
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+
+.above-footer{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(10px, 3vw, 40px);
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(10px, 2vw, 20px);
+
+}
+
+.lower-section-pics{
+    display: block;
+    width: clamp(210px, 28vw, 350px);
+    border: 5px solid rgb(109, 35, 101);
+    box-sizing: border-box;
+}
+
+footer{
+    background: rgb(109, 35, 101);
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    min-height: clamp(40px, 8vh, 70px);
+    padding: clamp(10px, 2vw, 25px);
+
+    text-align: center;
+    color: white;
+    font-size: clamp(0.5rem, 1vw, 1rem);
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ABOUT US PAGE*/
+
+.aboutus-upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("Images/execbackground.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: clamp(550px, 43vh, 650px);
+    padding: clamp(10px, 3vw, 30px);
+
+    border: 5px solid rgb(109, 35, 101);
+    box-sizing: border-box;
+}
+
+.aboutus-circles{
+    margin: auto;
+    width: clamp(100px, 22vw, 250px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: clamp(5px, 1vw, 10px) solid white;
+    position: relative;
+    top: 125px;
+    bottom: clamp(-80px, -10vw, -150px);
+    transition: transform 0.3s ease;
+}
+
+.aboutus-circles:hover{
+    transform: scale(1.1);
+}
+
+.aboutus-middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: clamp(10px, 2vw, 20px);
+    padding: clamp(10px, 3vw, 15px);
+}
+
+.paragraph-row{
+    flex: 1 1 clamp(250px, 30vw, 450px);
+    background: white;
+    color: rgb(109, 35, 101);
+    border: 5px solid rgb(109, 35, 101);
+    border-radius: 30px;
+    margin: clamp(7px, 1.5vw, 15px);
+    padding: clamp(5px, 1vw, 7px);
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+}
+
+.aboutus-middle-lower{
+    min-height: clamp(150px, 20vh, 175px);
+    text-align: center;
+    color: rgb(109, 35, 101);
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wide-paragraph{
+    width: clamp(300px, 60vw, 800px);
+    background: white;
+    color: rgb(109, 35, 101);
+    border: 5px, solid rgb(109, 35, 101);
+    border-radius: 30px;
+    padding: clamp(10px, 2vw, 20px);
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: clamp(5px, 2vw, 25px);
+    margin: 0 auto;
+}
+
+.aboutus-lower{
+    min-height: clamp(100px, 23vh, 150px);
+    color: rgb(109, 35, 101);
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    margin: clamp(20px, 5vw, 30px) auto;
+    padding: clamp(10px, 3vw, 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.social-link{
+    background: white;
+    color: rgb(109, 35, 101);
+    text-decoration: none;
+    margin: clamp(10px, 3vw, 25px);
+    font-size: clamp(0.9rem, 2vw, 1.3rem);
+    padding: clamp(6px, 1.5vw, 12px);
+    border: 2px solid rgb(109, 35, 101);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/*MEET THE TEAM PAGE*/
+
+.meettheteam-upper{
+    text-align: center;
+    color: rgb(109, 35, 101);
+    margin: 0 auto;
+    padding: clamp(10px, 3vw, 40px);
+}
+
+.member-photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(15px, 3vw, 40px);
+    margin-bottom: clamp(30px, 5vw, 60px);
+}
+
+.member-image{
+    width: clamp(300px, 30vw, 400px);
+    object-fit: cover;
+}
+
+.meettheteam-lower{
+    min-height: clamp(100px, 23vh, 150px);
+    color: rgb(109, 35, 101);
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    margin: clamp(5px, 1vw, 10px) auto;
+    padding: clamp(2px, 1vw, 5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.team-link{
+    background: white;
+    color: rgb(109, 35, 101);
+    text-decoration: none;
+    margin: clamp(10px, 3vw, 25px);
+    font-size: clamp(0.9rem, 2vw, 1.3rem);
+    padding: clamp(6px, 1.5vw, 12px);
+    border: 2px solid rgb(109, 35, 101);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.meettheteam-message{
+    text-align: center;
+    color: rgb(109, 35, 101);
+    font-size: x-large;
+}
+
+.teams-message {
+  border: 0;
+  text-align: center;
+  color: rgb(109, 35, 101);
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  position: relative;
+  padding: clamp(10px, 2vw, 20px);
+  height: auto;
+  bottom: 0;
+}
+
+/*NEWSLETTERS PAGE*/
+
+.image-features-newsletters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("Images/newslettersback.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: clamp(350px, 60vh, 800px);
+    padding: clamp(10px, 3vw, 30px);
+
+    border: 5px solid rgb(109, 35, 101);
+    box-sizing: border-box;
+}
+
+.newsletters-middle-section{
+    height: 40vh;
+    text-align: center;
+}
+
+.newsletter-message{
+    text-align: center;
+    color: rgb(109, 35, 101);
+    font-size: large;
+}
+
+.newsletter-item{
+    color: rgb(109, 35, 101);
+    text-decoration: none;
+    border-radius: 200px;
+    padding: 10px;
+    flex-wrap: nowrap;
+
+    white-space: normal;
+    text-align: center;
+    padding: clamp(6px, 1vw, 10px);
+}
+
+.newsletter-item:hover{
+    color: white;
+    background: rgb(109, 35, 101);
+    border-radius: 200px;
+    padding: 10px;
+    text-decoration: none;
+    flex-wrap: nowrap;
+}
+
+.newsletter-list{
+    margin: clamp(10px, 2vw, 25px) 0;
+}
+
+/*SPONSORS PAGE*/
+
+.sponsors-upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("Images/sponsorsback.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: clamp(550px, 42vh, 650px);
+    padding: clamp(10px, 3vw, 30px);
+
+    border: 5px solid rgb(109, 35, 101);
+    box-sizing: border-box;
+}
+
+.sponsors-message{
+    text-align: center;
+    color: rgb(109, 35, 101);
+    font-size: large;
+}
+
+.sponsors-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(15px, 3vw, 40px);
+    margin-bottom: clamp(30px, 5vw, 60px);
+}
+
+.sponsor-image{
+    max-width: 95%;
+}
